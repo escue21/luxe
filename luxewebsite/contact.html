@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- 
+Ester Cuenta
+WEB150, ASN6
+Business name:  Luxe Salon and Spa
+ -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxe Salon and Spa contact page ">
+    <title>Luxe Salon + Spa Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&family=Ruthie&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+
+
+
+<body>
+    <nav class="bigbox">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="current">Contact</a>
+        <a href="#">Search</a>
+    </nav>
+
+
+    <header class="bigbox contactimg">
+        <div>
+            <a href="index.html">
+                <h1 class="ruthie">Luxe</h1>
+                <p>Salon + Spa</p>
+            </a>
+        </div>
+    </header>
+
+
+    <h1 class="title"><span>Contact</span> <span> Us</span></h1>
+
+
+    <main class="bigbox contact">
+        <form name="contact_form" id="contact_form" method="post" action="submit.php" class="subform">
+            <h2>We'd love to hear from you</h2>
+
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+
+            <p id="exp-group">Have you experienced Luxe Salon and Spa before?</p>
+            <div class="radio-format" role="group" aria-labelledby="exp-group">
+                <label for="exp-no">
+                    <input type="radio" name="exp-y" id="exp-no" value="no">
+                    Not yet
+                </label>
+                <label for="exp-yes">
+                    <input type="radio" name="exp-y" id="exp-yes" value="yes">
+                    Yes
+                </label>
+            </div>
+
+            <input type="checkbox" name="promos" value="yes" id="promos" checked>
+            <label for="promos">I would like to receive the latest promotions and specials.</label>
+
+            <label for="refer">How did you hear about us?</label>
+            <select name="refer" id="refer">
+                <option value="">- Choose One -</option>
+                <option value="1">Friend</option>
+                <option value="2">Pandora Radio</option>
+                <option value="3">GQ Magazine</option>
+                <option value="4">Cosmopolitan Magazine</option>
+                <option value="5">iPic Movie Theatres</option>
+            </select>
+
+            <label for="comments">How was your Luxe experience?</label>
+            <textarea placeholder="Submit a review of our services" name="comments" id="comments" required></textarea>
+
+            <input type="submit" value="Submit" aria-labelledby="comments">
+
+        </form>
+
+
+        <section>
+            <h2>Your Rejuvenation Starts Here</h2>
+            <h3><span class="ruthie">Luxe</span> Salon + Spa</h3>
+
+            <h3>Hours:</h3>
+            <ul>
+                <li>Monday to Saturday: 9:00 a.m to 7:00 p.m</li>
+                <li>Sunday: 11:00 a.m to 5:00 p.m</li>
+            </ul>
+
+            <h3>Address:</h3>
+            <ul>
+                <li>Located inside the Bridges of Poplar Creek Country Club</li>
+                <li>123 Second Main St</li>
+                <li>Hoffman Estates, IL 60169</li>
+                <li>847.123.4567</li>
+            </ul>
+
+            <p class="btn">Book online</p>
+
+            <div>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.6595171983818!2d-88.13939068470457!3d42.050480962588104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fa86f1aed4ee9%3A0x8aebabd9c3981675!2sBridges%20of%20Poplar%20Creek%20Country%20Club!5e0!3m2!1sen!2sus!4v1626792124637!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <footer>
+        <small>2021 Luxe Salon + Spa</small>
+    </footer>
+
+</body>
+
+
+</html>

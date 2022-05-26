@@ -1,0 +1,528 @@
+/* 
+Ester Cuenta
+WEB150, ASN6
+Business name:  Luxe Salon and Spa
+*/
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 2600px;
+    margin: 0 auto;
+    font-family: oxygen, arial, helvetica, sans-serif;
+    font-size: calc(12px + (20 - 12) * (100vw - 300px) / (1600 - 300));
+    background-color: #efefef;
+    background-image: url(..//images/floral_onfocus_onfocus_vecteezy10.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+
+}
+
+
+
+.bigbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ruthie {
+    font-family: ruthie, arial, helvetica, sans-serif;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+span {
+    display: inline-block;
+}
+
+span::first-letter {
+    font-family: ruthie, arial, helvetica, sans-serif;
+    font-size: 150%;
+    line-height: 1;
+}
+
+p,
+details,
+summary {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+header.bigbox {
+    justify-content: flex-start;
+}
+
+header.bigbox a {
+    color: #263a50;
+}
+
+header.bigbox a:hover {
+    color: #3d8a96;
+}
+
+header.bigbox a:active {
+    color: #2d6972;
+}
+
+nav {
+    background: #cdeff2;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #000;
+    padding: 10px 20px;
+    font-size: 110%;
+    border-radius: 15px;
+    margin: 0 1em;
+}
+
+nav.bigbox {
+    justify-content: center;
+}
+
+nav a.current {
+    background: #98f7f1b5;
+}
+
+nav a:hover {
+    background: #7ce5f6;
+    background: linear-gradient(140deg, #e9ffe4 20%, #b3f9f2 70%, #7ce5f6 100%)
+}
+
+nav a:active {
+    background: #e9ffe4;
+}
+
+header {
+    text-align: left;
+    justify-content: left;
+    min-height: 400px;
+    background-image: url(../images/sarah-dorweiler-x2tmfd1-sga-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+header.serviceimg {
+    background-image: url(../images/pexels-karolina-grabowska-4202325s1.png);
+}
+
+header.contactimg {
+    background-image: url(../images/mediamodifier-o6nntgfqcm0-unsplashs1.png);
+}
+
+header div {
+    padding-top: 80px;
+    padding-left: 20%;
+    color: #263a50;
+}
+
+header h1 {
+    padding: 0 120px 0 120px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    font-size: 8em;
+}
+
+header p {
+    margin-top: -65px;
+    padding-left: 140px;
+    font-size: 170%;
+}
+
+.intro {
+    font-size: 125%;
+    text-align: center;
+    margin: 0 0 50px 0;
+    background-color: rgba(177, 246, 236, .7);
+    box-shadow: 0 0 20px 10px rgba(177, 246, 236, .7);
+}
+
+.left {
+    flex-basis: 30%;
+}
+
+.right {
+    flex-basis: 60%;
+    padding: 0 10px 0 10px;
+    border-radius: 15px;
+}
+
+.btn {
+    display: block;
+    font-size: 110%;
+    padding: 5px 50px;
+    border-radius: 15px;
+    background-color: #263a50;
+    color: #fff;
+    margin: 10px auto 0 auto;
+    border: none;
+    text-align: center;
+}
+
+a .btn {
+    color: #fff;
+}
+
+.btn:hover {
+    background: #3d8a96;
+    box-shadow: 0 0 17px #808080;
+}
+
+.btn:active {
+    background: #439aa7;
+}
+
+.medimg {
+    max-width: 100%;
+    margin: 0 50px;
+    border: thick solid #263a50;
+}
+
+.smallimg {
+    width: 200px;
+    border: thick solid #263a50;
+    align-items: center;
+}
+
+.smallimg:hover {
+    transform: scale(1.12);
+    transition: all .5s;
+    box-shadow: 0 0 20px #5b5a5a;
+}
+
+section {
+    padding: 10px;
+    margin: 20px;
+}
+
+h2.ruthie {
+    font-size: 60px;
+    text-align: center;
+    background-color: rgba(177, 246, 236, 0.66);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+h3:hover {
+    transform: scale(1.12);
+    transition: all .5s;
+}
+
+h3 span.ruthie {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    background-color: #b1f6ec9c;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 auto 55px auto;
+    font-size: 35px;
+    box-shadow: 0 0 20px 5px #b1f6ec9c;
+}
+
+
+
+
+.services {
+    justify-content: center;
+    max-width: 1200px;
+    margin: 10px auto 30px auto;
+}
+
+.services .left {
+    flex-basis: 10%;
+    margin: 10px auto 15px auto;
+}
+
+.services .smallimg:hover {
+    transform: none;
+    transition: none;
+    box-shadow: none;
+}
+
+.services .right {
+    max-width: 1000px;
+    flex-basis: 80%;
+    margin: 10px auto 15px auto;
+    background-color: #e2e4e497;
+}
+
+.services .right:hover {
+    transform: scale(1.0);
+    transition: all .7s;
+    box-shadow: 0 0 20px #5b5a5a;
+}
+
+.offer {
+    text-align: center;
+    border-radius: 15px;
+    background-color: #cde5f2ee;
+    animation: color-change 4s infinite;
+}
+
+.offer p.ruthie {
+    font-size: 40px;
+}
+
+.services p {
+    line-height: normal;
+}
+
+@keyframes color-change {
+    0% {
+        background-color: #cde5f2ee;
+    }
+
+    25% {
+        background-color: #cde0f2ee;
+    }
+
+    75% {
+        background-color: #cdd6f2ee;
+    }
+
+    100% {
+        background-color: #cde5f2ee;
+    }
+}
+
+.pricing {
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+}
+
+.pricing caption {
+    margin: 15px auto 0 auto;
+    white-space: nowrap;
+}
+
+.pricing th,
+.pricing td {
+    border: 2px solid #d2d5d5eb;
+    padding: 4px 10px 4px 10px;
+}
+
+.pricing th {
+    text-align: center;
+    padding: 7px 10px;
+    min-width: 50px;
+}
+
+
+
+
+.contact {
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1900px;
+    padding: 15px;
+}
+
+
+.contact form,
+.contact section {
+    flex-basis: 45%;
+    padding: 17px;
+    margin: 0 5px;
+    border: thick solid #263a50;
+    border-image-slice: 1;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.subform h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    padding-top: 25px;
+    margin-bottom: 2px;
+}
+
+label[for="promos"] {
+    display: inline-block;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    font-family: oxygen, arial, helvetica, sans-serif;
+    font-size: 1em;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    color: #000;
+    background-color: rgba(184, 212, 225, 0.681);
+}
+
+textarea {
+    min-height: 200px;
+    resize: vertical;
+    max-height: 1000px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    height: 17px;
+    width: 17px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.subform p {
+    margin-bottom: 1px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+div.radio-format {
+    font-size: .95em;
+    margin-top: 0;
+}
+
+div.radio-format label {
+    font-weight: normal;
+    padding: 2px;
+}
+
+input[type="submit"] {
+    font-size: 1em;
+    padding: 10px 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #57c7d8;
+    color: #000;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3d8a96;
+    color: #fff;
+}
+
+input[type="submit"]:active {
+    background-color: #263a50;
+    color: #fff;
+}
+
+.contact section {
+    text-align: center;
+}
+
+.contact h3 {
+    transform: none;
+    transition: none;
+}
+
+.contact .map {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.contact section ul {
+    padding: 0;
+    margin: -15px 0 15px 0;
+}
+
+.contact section li {
+    list-style-type: none;
+}
+
+
+
+
+footer {
+    text-align: center;
+    background: #cdeff2;
+    padding: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1015px) {
+    .bigbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.bigbox {
+        flex-direction: row;
+    }
+
+    .medimg {
+        margin: 0 auto;
+    }
+
+    .contact form,
+    .contact section {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .services .left {
+        margin-bottom: 0;
+    }
+
+    .services .right {
+        margin: 0 7px 20px 7px;
+    }
+
+    header h1 {
+        background-color: rgba(255, 255, 255, .3);
+    }
+
+    header div {
+        padding: 80px 0 0 5px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+
+
+
+
+}
